@@ -15,7 +15,7 @@ Most of this is to follow David Armendáriz's [Udemy course](https://www.udemy.c
    - npm start
 6. Check [App.test.tsx](./my-app/src/App.test.tsx).
    - screen.debug() is a useful debugging tool.
-   - screen.getByText()
+   - Query method: screen.getByText() and the use of regular expression.
 7. Run the following to see the testing result and the output of screen.debug().
    - npm test
 8. Run the following to see the coverage report.
