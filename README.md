@@ -1,6 +1,6 @@
 # Tutorials for React Testing Library
 
-This is to document the learning tutorials for React Testing Library. The assumption is that you already some basic knowledge or experience for React itself.
+This is to document the learning tutorials for React Testing Library. The assumption is that you already some basic knowledge or experience for React itself and for Jest.
 
 ## References
 
@@ -8,4 +8,5 @@ This is to document the learning tutorials for React Testing Library. The assump
 - [Create a New React App](https://reactjs.org/docs/create-a-new-react-app.html)
 - [Adding TypeScript](https://create-react-app.dev/docs/adding-typescript/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Recommended Tools](https://reactjs.org/docs/testing.html)
+- [Testing Overview](https://reactjs.org/docs/testing.html)
+- [GitHub repo for Testing React Apps with React Testing Library (RTL)](https://github.com/DavidArmendariz/react-testing-course)
