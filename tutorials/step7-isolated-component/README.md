@@ -1,4 +1,4 @@
-# Tutorial to use fireEvent and user event API
+# Tutorial to test isolated component
 
 Most of this is to follow David Armendáriz's [Udemy course](https://www.udemy.com/course/testing-react-apps-with-react-testing-library-rtl/).
 
@@ -8,15 +8,15 @@ Most of this is to follow David Armendáriz's [Udemy course](https://www.udemy.c
 2. Go to my-app folder.
 3. Run the following to install required packages.
    - npm install
-4. Check [App.tsx](./my-app/src/App.tsx) to see how this app is implemented.
+4. Check [CustomInput.tsx](./my-app/src//CustomInput.tsx) to see the isolated component.
 5. Run the following to see the web page.
    - npm start
-6. Check [App.test.tsx](./my-app/src/App.test.tsx).
-   - Search for fireEvent and for userEvent.
+6. Check [CustomInput.test.tsx](./my-app/src/CustomInput.test.tsx) to see testing the isolated component.
 7. Run the following to see the testing result and the output of screen.debug().
    - npm test
-8. Run the following to see the coverage report.
-   - npm test -- --coverage
+8. Check scripts\coverage in [package.json](./my-app/package.json) to see the script to get coverage.
+9. Run the following to see the coverage report.
+   - npm run coverage
 
 ## Reference
 
