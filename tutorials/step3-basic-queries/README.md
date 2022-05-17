@@ -13,7 +13,7 @@ Most of this is to follow David Armendáriz's [Udemy course](https://www.udemy.c
 5. Check [App.test.tsx](./my-app/src/App.test.tsx).
    - beforeEach is a useful tool to reduce duplicate codes.
    - Query methods: getByRole, getByPlaceholderText, and getByLabelText.
-6. Run the following to see the testing result and the output of screen.debug().
+6. Run the following to see the testing result.
    - npm test
 7. Run the following to see the coverage report.
    - npm test -- --coverage

@@ -12,7 +12,7 @@ Most of this is to follow David Armendáriz's [Udemy course](https://www.udemy.c
 5. Run the following to see the web page.
    - npm start
 6. Check [CustomInput.test.tsx](./my-app/src/CustomInput.test.tsx) to see testing the isolated component.
-7. Run the following to see the testing result and the output of screen.debug().
+7. Run the following to see the testing result.
    - npm test
 8. Check scripts\coverage in [package.json](./my-app/package.json) to see the script to get coverage.
 9. Run the following to see the coverage report.

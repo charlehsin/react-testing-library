@@ -14,7 +14,7 @@ Most of this is to follow David Armendáriz's [Udemy course](https://www.udemy.c
    - npm start
 6. Check [App.test.tsx](./my-app/src/App.test.tsx).
    - Query methods: getAllXXX.
-7. Run the following to see the testing result and the output of screen.debug().
+7. Run the following to see the testing result.
    - npm test
 8. Run the following to see the coverage report.
    - npm test -- --coverage

@@ -18,7 +18,7 @@ Most of this is to follow David Armendáriz's [Udemy course](https://www.udemy.c
    - Check the mocking related codes by searching for "mock". Usually, we only need jest.mock. However, since we are using Typescript, we need jest.mocked also so that Typescript won't fail compiling.
    - Check the usage of "await waitFor" and "await screen.findByXXX" after rendering. This makes sure that this line and the subsequent lines are done after the useEffect hook is finished.
    - In summary, use getByXXX and queryByXXX for flows before useEffect hook is finished. Use waitFor and findByXXX for flows after userEffect hook is finished.
-8. Run the following to see the testing result and the output of screen.debug().
+8. Run the following to see the testing result.
    - npm test
 9. Run the following to see the coverage report.
    - npm test -- --coverage

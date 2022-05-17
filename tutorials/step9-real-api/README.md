@@ -12,7 +12,7 @@ Most of this is to follow David Armendáriz's [Udemy course](https://www.udemy.c
 5. Run the following to see the web page.
    - npm start
 6. Check [Pokemon.test.tsx](./my-app/src/Pokemon.test.tsx) to see how it is tested.
-7. Run the following to see the testing result and the output of screen.debug().
+7. Run the following to see the testing result.
    - npm test
 8. Run the following to see the coverage report.
    - npm run coverage
