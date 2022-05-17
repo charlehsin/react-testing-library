@@ -28,3 +28,5 @@ Most of this is to follow David Armendáriz's [Udemy course](https://www.udemy.c
 - [Events](https://testing-library.com/docs/react-testing-library/cheatsheet#events)
 - [Firing Events](https://testing-library.com/docs/dom-testing-library/api-events/)
 - [User Event](https://testing-library.com/docs/user-event/intro/)
+- [jest.mocked](https://jestjs.io/docs/jest-object#jestmockedtitem-t-deep--false)
+- [Mocking Modules](https://jestjs.io/docs/27.x/mock-functions#mocking-modules)

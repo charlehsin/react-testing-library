@@ -1,4 +1,4 @@
-# Tutorial to debug test
+# Tutorial to test real API request
 
 Most of this is to follow David Armendáriz's [Udemy course](https://www.udemy.com/course/testing-react-apps-with-react-testing-library-rtl/).
 
@@ -8,11 +8,14 @@ Most of this is to follow David Armendáriz's [Udemy course](https://www.udemy.c
 2. Go to my-app folder.
 3. Run the following to install required packages.
    - npm install
-4. Run the following to see the web page.
+4. Check [fetch-service.ts](./my-app/src/fetch-service.ts) and [Pokemon.tsx](./my-app/src//Pokemon.tsx) and [App.tsx](./my-app/src//App.tsx) to see how we use fetch API to call a real API and get results.
+5. Run the following to see the web page.
    - npm start
-5. Check [launch.json](./my-app/.vscode/launch.json) to see the configuration to enable debugging.
-6. Change the workspace of Visual Studio Code to open folder [my-app](./my-app/). For the Visual Studio Code debugging to work, need to open a folder 1 level above .vscode folder.
-7. Set a breakpoint at one of the XXX.test.tsx file and choose "debug the unit test. The breakpoint will be hit.
+6. Check [Pokemon.test.tsx](./my-app/src/Pokemon.test.tsx) to see how it is tested.
+7. Run the following to see the testing result and the output of screen.debug().
+   - npm test
+8. Run the following to see the coverage report.
+   - npm run coverage
 
 ## Reference
 

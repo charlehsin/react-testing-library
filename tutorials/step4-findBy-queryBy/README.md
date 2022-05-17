@@ -15,7 +15,7 @@ Most of this is to follow David Armendáriz's [Udemy course](https://www.udemy.c
    - npm start
 7. Check [App.test.tsx](./my-app/src/App.test.tsx).
    - Query method: queryByXXX. This is to return the component found. Use this to check a not-supposed-to-be-there component.
-   - Check the mocking related codes by searching for "mock".
+   - Check the mocking related codes by searching for "mock". Usually, we only need jest.mock. However, since we are using Typescript, we need jest.mocked also so that Typescript won't fail compiling.
    - Check the usage of "await waitFor" and "await screen.findByXXX" after rendering. This makes sure that this line and the subsequent lines are done after the useEffect hook is finished.
    - In summary, use getByXXX and queryByXXX for flows before useEffect hook is finished. Use waitFor and findByXXX for flows after userEffect hook is finished.
 8. Run the following to see the testing result and the output of screen.debug().
@@ -30,3 +30,5 @@ Most of this is to follow David Armendáriz's [Udemy course](https://www.udemy.c
 - [Queries](https://testing-library.com/docs/react-testing-library/cheatsheet#queries)
 - [When to use what query](https://testing-library.com/docs/queries/about/#priority)
 - [Async Methods](https://testing-library.com/docs/dom-testing-library/api-async/)
+- [jest.mocked](https://jestjs.io/docs/jest-object#jestmockedtitem-t-deep--false)
+- [Mocking Modules](https://jestjs.io/docs/27.x/mock-functions#mocking-modules)

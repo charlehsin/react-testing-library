@@ -26,3 +26,5 @@ Most of this is to follow David Armendáriz's [Udemy course](https://www.udemy.c
 - [Queries](https://testing-library.com/docs/react-testing-library/cheatsheet#queries)
 - [When to use what query](https://testing-library.com/docs/queries/about/#priority)
 - [Async Methods](https://testing-library.com/docs/dom-testing-library/api-async/)
+- [jest.mocked](https://jestjs.io/docs/jest-object#jestmockedtitem-t-deep--false)
+- [Mocking Modules](https://jestjs.io/docs/27.x/mock-functions#mocking-modules)
