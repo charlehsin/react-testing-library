@@ -4,7 +4,6 @@ This is to document the learning tutorials for React Testing Library. The assump
 
 ## Backlog items to explore
 
-- Test dropdown menu
 - Test radio button
 - Test checkbox
 - Mock 3rd party, legacy JS library
