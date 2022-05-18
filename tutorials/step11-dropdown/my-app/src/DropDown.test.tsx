@@ -50,12 +50,15 @@ describe('When component renders OK', () => {
       onChange={onChange}
     />);
     expect(screen.getAllByRole('option').length).toEqual(3);
+
     let optionElement = screen.getAllByRole('option')[0] as HTMLOptionElement;
     expect(optionElement.value).toEqual('honda');
     expect(optionElement.selected).toBeFalsy();
+
     optionElement = screen.getAllByRole('option')[1] as HTMLOptionElement;
     expect(optionElement.value).toEqual('ford');
     expect(optionElement.selected).toBeTruthy();
+    
     optionElement = screen.getAllByRole('option')[2] as HTMLOptionElement;
     expect(optionElement.value).toEqual('kia');
     expect(optionElement.selected).toBeFalsy();
@@ -63,7 +66,7 @@ describe('When component renders OK', () => {
 });
 
 describe('When the user selects', () => {
-  test('should select the target option', async () => {
+  test('should call onChange once', async () => {
     const mockOnChange = jest.fn();
     render(<DropDown
       label='My Label'

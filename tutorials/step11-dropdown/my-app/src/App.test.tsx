@@ -21,7 +21,10 @@ describe('When the user selects', () => {
       screen.getByRole('combobox'),
       screen.getAllByRole('option')[2]);
 
+    screen.getByText('You chose: kia');
+    
     expect(screen.getAllByRole('option').length).toEqual(3);
+
     let optionElement = screen.getAllByRole('option')[0] as HTMLOptionElement;
     expect(optionElement.value).toEqual('honda');
     expect(optionElement.selected).toBeFalsy();

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import DropDown from './DropDown';
+import RadioButtons from './RadioButtons';
 
 function App() {
   const options = [
@@ -11,14 +11,15 @@ function App() {
 
   const [value, setValue] = useState('ford');
 
-  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value);
   };
 
   return (
     <div>
-      <DropDown
-        label='What car do you drive?'
+      <RadioButtons
+        label='What car do you choose?'
+        name='car'
         options={options}
         value={value}
         onChange={handleChange}

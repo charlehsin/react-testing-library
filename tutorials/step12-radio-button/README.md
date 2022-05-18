@@ -1,4 +1,4 @@
-# Tutorial to test drop down menu
+# Tutorial to test radio button
 
 1. Open a Bash and run the following commands if you are behind corporate VPN.
    - export HTTP_PROXY=<http_proxy>
@@ -6,10 +6,10 @@
 2. Go to my-app folder.
 3. Run the following to install required packages.
    - npm install
-4. Check [App.tsx](./my-app/src/App.tsx) and [DropDown.tsx](./my-app/src/DropDown.tsx).
+4. Check [App.tsx](./my-app/src/App.tsx) and [RadioButtons.tsx](./my-app/src/RadioButtons.tsx).
 5. Run the following to see the web page.
    - npm start
-6. Check [App.test.tsx](./my-app/src/App.test.tsx) and [DropDown.test.tsx](./my-app/src/DropDown.test.tsx).
+6. Check [App.test.tsx](./my-app/src/App.test.tsx) and [RadioButtons.test.tsx](./my-app/src/RadioButtons.test.tsx).
 7. Run the following to see the testing result.
    - npm test
 8. Run the following to see the coverage report.
