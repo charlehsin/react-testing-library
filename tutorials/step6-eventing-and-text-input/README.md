@@ -1,4 +1,4 @@
-# Tutorial to test real API request
+# Tutorial to use fireEvent and userEvent for testing text input
 
 Most of this is to follow David Armendáriz's [Udemy course](https://www.udemy.com/course/testing-react-apps-with-react-testing-library-rtl/).
 
@@ -8,14 +8,15 @@ Most of this is to follow David Armendáriz's [Udemy course](https://www.udemy.c
 2. Go to my-app folder.
 3. Run the following to install required packages.
    - npm install
-4. Check [fetch-service.ts](./my-app/src/fetch-service.ts) and [Pokemon.tsx](./my-app/src//Pokemon.tsx) and [App.tsx](./my-app/src//App.tsx) to see how we use fetch API to call a real API and get results.
+4. Check [App.tsx](./my-app/src/App.tsx) to see how this app is implemented.
 5. Run the following to see the web page.
    - npm start
-6. Check [Pokemon.test.tsx](./my-app/src/Pokemon.test.tsx) to see how it is tested.
+6. Check [App.test.tsx](./my-app/src/App.test.tsx).
+   - Search for fireEvent and for userEvent.
 7. Run the following to see the testing result.
    - npm test
 8. Run the following to see the coverage report.
-   - npm run coverage
+   - npm test -- --coverage
 
 ## Reference
 
@@ -27,6 +28,5 @@ Most of this is to follow David Armendáriz's [Udemy course](https://www.udemy.c
 - [Events](https://testing-library.com/docs/react-testing-library/cheatsheet#events)
 - [Firing Events](https://testing-library.com/docs/dom-testing-library/api-events/)
 - [User Event](https://testing-library.com/docs/user-event/intro/)
-- [Debugging Tests in Visual Studio Code](https://create-react-app.dev/docs/debugging-tests/#debugging-tests-in-visual-studio-code)
 - [jest.mocked](https://jestjs.io/docs/jest-object#jestmockedtitem-t-deep--false)
 - [Mocking Modules](https://jestjs.io/docs/27.x/mock-functions#mocking-modules)
