@@ -20,7 +20,9 @@ describe('When the user selects', () => {
     await userEvent.click(screen.getAllByRole('radio')[2]);
 
     screen.getByText('You chose: kia');
+    
     expect(screen.getAllByRole('radio').length).toEqual(3);
+
     let inputElement = screen.getAllByRole('radio')[0] as HTMLInputElement;
     expect(inputElement.checked).toBeFalsy();
     inputElement = screen.getAllByRole('radio')[1] as HTMLInputElement;
