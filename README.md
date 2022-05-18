@@ -2,6 +2,14 @@
 
 This is to document the learning tutorials for React Testing Library. The assumption is that you already some basic knowledge or experience for React itself and for Jest.
 
+## Backlog items to explore
+
+- Test dropdown menu
+- Test radio button
+- Test checkbox
+- Mock 3rd party, legacy JS library
+- Test component disappearance
+
 ## References
 
 - [Testing React apps with React Testing Library (RTL)](https://www.udemy.com/course/testing-react-apps-with-react-testing-library-rtl/)
