@@ -4,7 +4,7 @@ This is to document the learning tutorials for React Testing Library. The assump
 
 ## Backlog items to explore
 
-- Mock 3rd party, legacy JS library
+- To be added
 
 ## References
 
