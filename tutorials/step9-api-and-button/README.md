@@ -11,7 +11,7 @@ Most of this is to follow David Armendáriz's [Udemy course](https://www.udemy.c
 4. Check [fetch-service.ts](./my-app/src/fetch-service.ts) and [Pokemon.tsx](./my-app/src//Pokemon.tsx) and [App.tsx](./my-app/src//App.tsx) to see how we use fetch API to call a real API and get results.
 5. Run the following to see the web page.
    - npm start
-6. Check [Pokemon.test.tsx](./my-app/src/Pokemon.test.tsx) to see how it is tested.
+6. Check [fetch-service.test.ts](./my-app/src/fetch-service.test.ts) and [Pokemon.test.tsx](./my-app/src/Pokemon.test.tsx) to see how it is tested.
 7. Run the following to see the testing result.
    - npm test
 8. Run the following to see the coverage report.
