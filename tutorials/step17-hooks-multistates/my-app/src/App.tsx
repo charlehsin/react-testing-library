@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Joke from './Joke';
+import Tasks from './Tasks';
 
 function App() {
   const [userQuery, setUserQuery] = useState('');
@@ -23,11 +24,13 @@ function App() {
     <div className="App">
       <h1>Hello everyone</h1>
       <div className='form'>
-        <input value={userQuery} onChange={updateUserQuery} onKeyPress={handleKeyPress} />
+        <input value={userQuery} onChange={updateUserQuery} onKeyPress={handleKeyPress} aria-label='userQueryText' />
         <button onClick={searchQuery}>Search</button>
       </div>
       <hr />
       <Joke />
+      <hr />
+      <Tasks />
     </div>
   );
 }
