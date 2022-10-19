@@ -1,6 +1,6 @@
-# Tutorial to test hooks with the usage of multiple states and the usage of local storage.
+# Tutorial to test hooks with the usages of interval, unmounting, conditional useEffect
 
-This is based on top of [step16-hooks](../step16-hooks/). We added the usage of multiple states and the usage of local storage.
+This is based on top of [step17-hooks-multistates](../step17-hooks-multistates/).
 
 1. Read the following introduction.
    - [Testing Overview](https://reactjs.org/docs/testing.html)
@@ -14,15 +14,20 @@ This is based on top of [step16-hooks](../step16-hooks/). We added the usage of 
    - npm install
 5. Check the following
    - Previous work
-      - [hook.ts](./my-app/src/hook.ts): This is the custom hook used by Joke.tsx.
-      - [Joke.tsx](./my-app/src/Joke.tsx): This is the Joke component used by App.tsx.
+      - [hook.ts](./my-app/src/hook.ts): This is the custom hook, useFetch, used by Joke.tsx.
+      - [Joke.tsx](./my-app/src/Joke.tsx): This uses the custom hook above.
+      - [Tasks.tsx](./my-app/src/Tasks.tsx): This uses multiple states and local storage.
       - [App.tsx](./my-app/src/App.tsx): This is the main app component.
    - New
-      - [Tasks.tsx](./my-app/src/Tasks.tsx): This is the new component with the usage of multiple states and the usage of local storage.
+      - Modified [hook.ts](./my-app/src/hook.ts): This adds the custom hook, useDynamicTransition, used by Gallery.tsx. This uses unmounting and conditional useEffect.
+      - [Gallery.tsx](./my-app/src/Gallery.tsx): This uses interval
+      - Modified [App.tsx](./my-app/src/App.tsx): This will toggle the mounting or unmounting of Gallery component.
 6. Run the following to see the web page.
    - npm start
 7. Check the corresponding test file
-   - [Tasks.test.tsx](./my-app/src/Tasks.test.tsx).
+   - [hook.test.tsx](./my-app/src/hook.test.tsx).
+   - [Gallery.test.tsx](./my-app/src/Gallery.test.tsx).
+   - [App.test.tsx](./my-app/src/App.test.tsx)
 8. Run the following to see the testing result.
    - npm test
 9. Run the following to see the coverage report.
