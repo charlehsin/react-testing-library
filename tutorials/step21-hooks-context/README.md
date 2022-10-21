@@ -1,6 +1,6 @@
-# Tutorial to test hooks with the usage of global reducer
+# Tutorial to test hooks with the usage of context
 
-This is based on top of [step19-hooks-reducer](../step19-hooks-reducer/).
+This is based on top of [step20-hooks-reducer-global](../step20-hooks-reducer-global/).
 
 1. Read the following introduction.
    - [Testing Overview](https://reactjs.org/docs/testing.html)
@@ -13,13 +13,19 @@ This is based on top of [step19-hooks-reducer](../step19-hooks-reducer/).
 4. Run the following to install required packages.
    - npm install
 5. Check the following
-   - New
+   - Existing
      - [state/types.ts](./my-app/src/state/types.ts): This defines the action type constant.
      - [state/actions.ts](./my-app/src/state/actions.ts): This provides a method to create new message with action type.
      - [state/reducer.ts](./my-app/src/state/reducer.ts): This provides a method to modify the reducer's states. This will be passed into useReducer hook.
      - [components/PublishMessage.tsx](./my-app/src/components/PublishMessage.tsx): This handles adding new messages, and uses the reducer dispatch to update the global reducer states.
      - [components/MessageBoard.tsx](./my-app/src/components/MessageBoard.tsx): This displays the messages based on the props.
      - [components/App.tsx](./my-app/src/components/App.tsx): This is the main app component, and uses the useReducer hook to maintain the global reducer states.
+   - New
+     - [context.ts](./my-app/src/context.ts): This defines the common createContext.
+     - [components/hooks.ts](./my-app/src/components/hooks.ts): This has the custom hook, useAppContext, to for useContext and createContext.
+     - Modified [components/PublishMessage.tsx](./my-app/src/components/PublishMessage.tsx): This uses the custom hook useAppContext to get the information.
+     - Modified [components/MessageBoard.tsx](./my-app/src/components/MessageBoard.tsx): This uses the custom hook useAppContext to get the information.
+     - Modified [components/App.tsx](./my-app/src/components/App.tsx): This uses Context.Provider to wrap the GUI components.
 6. Run the following to see the web page.
    - npm start
 7. Check the corresponding test files for each component above.
